@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "JQQY4U0ONg2AwCpjkL9eQYnj/HcgDRxNJJjm+yr8U3pQoOZnS+vG94LJ2bmIOn1EriG2UGFPbPlgDBcbtgWmug==",
+  "success": true,
+  "projectFilePath": "/home/daluz/Projects/phonebook/Api/Api.csproj",
+  "expectedPackageFiles": [
+    "/home/daluz/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/daluz/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/daluz/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
