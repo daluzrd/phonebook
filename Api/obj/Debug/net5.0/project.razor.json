@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/daluz/Projects/phonebook/Api/phonebook.csproj",
+  "FilePath": "/home/daluz/Projects/phonebook/Api/Api.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "5.0",
@@ -15616,7 +15616,7 @@
     ],
     "CSharpLanguageVersion": 900
   },
-  "RootNamespace": "phonebook",
+  "RootNamespace": "Api",
   "Documents": [],
   "SerializationFormat": "0.2"
 }

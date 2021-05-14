@@ -13,12 +13,10 @@ namespace Models
 
         [Required]
         [Column("username")]
-        [MaxLength(50)]
         public string Username { get; set; }
 
         [Required]
         [Column("password")]
-        [MaxLength(60)]
         public string Password { get; set; }
     }
 }
