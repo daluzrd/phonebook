@@ -8,6 +8,7 @@ using MySQL;
 using MySQL.Data.EntityFrameworkCore;
 using DataAccess;
 using Microsoft.EntityFrameworkCore;
+using Model;
 
 namespace phonebook
 {
@@ -29,6 +30,8 @@ namespace phonebook
             services.AddDbContext<DataContext>(
                 options => options.UseMySql(connStr, ServerVersion.AutoDetect(connStr))
             );
+
+            services.Configure<AppSettings>(Configuration);
 
             services.AddSwaggerGen(c =>
             {

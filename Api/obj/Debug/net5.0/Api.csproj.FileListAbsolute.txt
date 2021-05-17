@@ -53,3 +53,11 @@
 /home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/DataAccess.pdb
 /home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/DataServices.dll
 /home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/DataServices.pdb
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/mono_crash.21acb2b632.0.json
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.IdentityModel.Logging.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
