@@ -61,3 +61,7 @@
 /home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.IdentityModel.Tokens.dll
 /home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/System.IdentityModel.Tokens.Jwt.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Microsoft.Extensions.DependencyModel.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Scrutor.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.Filters.dll
+/home/daluz/Projects/phonebook/Api/bin/Debug/net5.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll

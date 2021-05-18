@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using DataAccess;
 using DataServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
@@ -21,6 +22,7 @@ namespace phonebook.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         [ProducesResponseType(typeof(List<User>), 200)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult Get()
@@ -36,6 +38,7 @@ namespace phonebook.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         [ProducesResponseType(typeof(User), 200)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

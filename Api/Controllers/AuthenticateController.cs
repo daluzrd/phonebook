@@ -1,6 +1,7 @@
 using System;
 using DataAccess;
 using DataServices;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Model;
@@ -17,6 +18,7 @@ namespace Api.Controllers
         }
 
         [HttpPost]
+        [AllowAnonymous]
         public IActionResult Login([FromBody]UserParams parameters)
         {
             try

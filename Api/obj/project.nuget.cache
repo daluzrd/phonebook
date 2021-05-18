@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Ta4kJ13JqcAXJSkao9LPwroQIMS2afmYScWi2KGaPxSULz0sK5vvgiA7INU1NqcGpdFRR1uxYmpnIgdIsJ9oaQ==",
+  "dgSpecHash": "nyHAwlg80+CsaM9NkJEJ9piNK8UYMA65WKiAsF7loFvqEG8MWK4Ec/XggYhMRtbd6qB8jONfgLjrZhrQEdKObg==",
   "success": true,
   "projectFilePath": "/home/daluz/Projects/phonebook/Api/Api.csproj",
   "expectedPackageFiles": [
@@ -34,6 +34,7 @@
     "/home/daluz/.nuget/packages/microsoft.extensions.configuration.abstractions/5.0.0/microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "/home/daluz/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.1/microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "/home/daluz/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "/home/daluz/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
     "/home/daluz/.nuget/packages/microsoft.extensions.fileproviders.abstractions/2.2.0/microsoft.extensions.fileproviders.abstractions.2.2.0.nupkg.sha512",
     "/home/daluz/.nuget/packages/microsoft.extensions.hosting.abstractions/2.2.0/microsoft.extensions.hosting.abstractions.2.2.0.nupkg.sha512",
     "/home/daluz/.nuget/packages/microsoft.extensions.logging/5.0.0/microsoft.extensions.logging.5.0.0.nupkg.sha512",
@@ -57,7 +58,10 @@
     "/home/daluz/.nuget/packages/mysql.entityframeworkcore/5.0.3.1/mysql.entityframeworkcore.5.0.3.1.nupkg.sha512",
     "/home/daluz/.nuget/packages/mysqlconnector/1.3.7/mysqlconnector.1.3.7.nupkg.sha512",
     "/home/daluz/.nuget/packages/pomelo.entityframeworkcore.mysql/5.0.0/pomelo.entityframeworkcore.mysql.5.0.0.nupkg.sha512",
+    "/home/daluz/.nuget/packages/scrutor/3.3.0/scrutor.3.3.0.nupkg.sha512",
     "/home/daluz/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.filters/7.0.2/swashbuckle.aspnetcore.filters.7.0.2.nupkg.sha512",
+    "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.filters.abstractions/7.0.2/swashbuckle.aspnetcore.filters.abstractions.7.0.2.nupkg.sha512",
     "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
     "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
     "/home/daluz/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
@@ -79,6 +83,7 @@
     "/home/daluz/.nuget/packages/system.security.principal.windows/4.7.0/system.security.principal.windows.4.7.0.nupkg.sha512",
     "/home/daluz/.nuget/packages/system.text.encoding.codepages/4.4.0/system.text.encoding.codepages.4.4.0.nupkg.sha512",
     "/home/daluz/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
+    "/home/daluz/.nuget/packages/system.text.json/4.7.2/system.text.json.4.7.2.nupkg.sha512",
     "/home/daluz/.nuget/packages/system.windows.extensions/4.7.0/system.windows.extensions.4.7.0.nupkg.sha512"
   ],
   "logs": []
