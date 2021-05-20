@@ -12,8 +12,8 @@ namespace Api.Controllers
     [Route("[controller]")]
     public class AuthenticateController : ControllerBase
     {
-        private readonly AuthenticationService _authenticationService;
-        public AuthenticateController(AuthenticationService authenticationService)
+        private readonly IAuthenticationService _authenticationService;
+        public AuthenticateController(IAuthenticationService authenticationService)
         {
             _authenticationService = authenticationService;
         }

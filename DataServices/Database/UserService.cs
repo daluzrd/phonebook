@@ -5,13 +5,11 @@ using System.Linq;
 
 namespace DataServices
 {
-    public class UserService : CommonService<User>
+    public class UserService : CommonService<User>, IUserService
     {
-        private readonly DataContext _context;
-        private readonly HashingService _hashingService;
-        public UserService(DataContext dbContext, HashingService hashingService) : base(dbContext)
+        private readonly IHashingService _hashingService;
+        public UserService(DataContext dbContext, IHashingService hashingService) : base(dbContext)
         {
-            _context = dbContext;
             _hashingService = hashingService;
         }
 
@@ -25,7 +23,7 @@ namespace DataServices
             if (password.Length < 8)
                 throw new ArgumentException("password should have 8 or more characters.");
 
-            if(_context.Users.Where(u => u.Username == username).Any())
+            if(context.Users.Where(u => u.Username == username).Any())
                 throw new Exception("username already exists.");
 
             password = _hashingService.Hashing(password);
@@ -34,8 +32,8 @@ namespace DataServices
             user.Username = username;
             user.Password = password;
 
-            _context.Add(user);
-            _context.SaveChanges();
+            context.Add(user);
+            context.SaveChanges();
 
             return user;
         }

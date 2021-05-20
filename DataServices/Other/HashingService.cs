@@ -3,7 +3,7 @@ using System.Text;
 
 namespace DataServices
 {
-    public class HashingService
+    public class HashingService : IHashingService
     {
         public string Hashing(string text)
         {

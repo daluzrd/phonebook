@@ -68,9 +68,9 @@ namespace phonebook
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "phonebook", Version = "v1" });
             });
 
-            services.AddTransient<HashingService>();
-            services.AddTransient<UserService>();
-            services.AddTransient<AuthenticationService>();
+            services.AddTransient<IHashingService, HashingService>();
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IAuthenticationService, AuthenticationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

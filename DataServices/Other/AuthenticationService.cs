@@ -9,12 +9,12 @@ using System.Text;
 
 namespace DataServices
 {
-    public class AuthenticationService
+    public class AuthenticationService : IAuthenticationService
     {
-        private readonly HashingService _hashingService;
+        private readonly IHashingService _hashingService;
         private readonly string _privateKey;
-        private readonly UserService _userService;
-        public AuthenticationService(UserService userService, HashingService hashingService, IConfiguration configuration)
+        private readonly IUserService _userService;
+        public AuthenticationService(IUserService userService, IHashingService hashingService, IConfiguration configuration)
         {
             _userService = userService;
             _hashingService = hashingService;
