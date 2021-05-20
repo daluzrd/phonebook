@@ -1,15 +1,16 @@
+using DataAccess;
+using DataServices;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
-using DataAccess;
-using Microsoft.EntityFrameworkCore;
-using Model;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
+using System;
 using System.Text;
 
 namespace phonebook
@@ -28,8 +29,6 @@ namespace phonebook
         {
             services.AddControllers();
 
-            services.Configure<AppSettings>(Configuration);
-
             var key = Encoding.ASCII.GetBytes(Configuration.GetSection("PrivateKey").Value);
             
             services.AddAuthentication(a => 
@@ -46,7 +45,8 @@ namespace phonebook
                     ValidateIssuerSigningKey = true,
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = false,
-                    ValidateAudience = false
+                    ValidateAudience = false,
+                    ClockSkew = TimeSpan.Zero
                 };
             });
             
@@ -67,6 +67,10 @@ namespace phonebook
                 c.OperationFilter<SecurityRequirementsOperationFilter>();
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "phonebook", Version = "v1" });
             });
+
+            services.AddTransient<HashingService>();
+            services.AddTransient<UserService>();
+            services.AddTransient<AuthenticationService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -1,4 +1,4 @@
-namespace Model
+namespace Models
 {
     public class UserParams{
         public string username { get; set; }

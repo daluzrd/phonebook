@@ -3,18 +3,19 @@ using DataAccess;
 using DataServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Options;
-using Model;
+using Models;
 
 namespace Api.Controllers
 {
     [Route("[controller]")]
     public class AuthenticateController : ControllerBase
     {
-        private readonly UserService _userService;
-        public AuthenticateController(DataContext dbContext, IOptions<AppSettings> appSettings)
+        private readonly AuthenticationService _authenticationService;
+        public AuthenticateController(AuthenticationService authenticationService)
         {
-            _userService = new UserService(dbContext, appSettings);
+            _authenticationService = authenticationService;
         }
 
         [HttpPost]
@@ -23,7 +24,7 @@ namespace Api.Controllers
         {
             try
             {
-                return Ok(_userService.Login(parameters.username, parameters.password));
+                return Ok(_authenticationService.Login(parameters.username, parameters.password));
             }
             catch(Exception e)
             {

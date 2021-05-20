@@ -18,5 +18,10 @@ namespace DataServices
         {
             return _context.Set<T>().ToList();
         }
+
+        public List<T> GetByFilter(Func<T, bool> func)
+        {
+            return _context.Set<T>().Where(func).ToList();
+        }
     }
 }
