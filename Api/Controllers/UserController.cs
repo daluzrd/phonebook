@@ -43,7 +43,7 @@ namespace phonebook.Controllers
         {
             try
             {
-                return Ok(_userService.Post(parameters.username, parameters.password));
+                return Ok(_userService.Post(parameters.Username, parameters.Password));
             }
             catch (ArgumentException e)
             {

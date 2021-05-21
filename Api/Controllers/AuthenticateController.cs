@@ -1,10 +1,7 @@
 using System;
-using DataAccess;
 using DataServices;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.Options;
 using Models;
 
 namespace Api.Controllers
@@ -24,7 +21,7 @@ namespace Api.Controllers
         {
             try
             {
-                return Ok(_authenticationService.Login(parameters.username, parameters.password));
+                return Ok(_authenticationService.Login(parameters.Username, parameters.Password));
             }
             catch(Exception e)
             {

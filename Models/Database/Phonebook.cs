@@ -23,5 +23,9 @@ namespace Models
         [ForeignKey("User")]
         [Column("idUser")]
         public int IdUser { get; set; }
+
+        [Column("cellphone")]
+        [MaxLength(20)]
+        public string Cellphone { get; set; }
     }
 }

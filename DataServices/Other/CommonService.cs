@@ -19,6 +19,10 @@ namespace DataServices
             return context.Set<T>().ToList();
         }
 
+        public T GetById(int id)
+        {
+            return context.Set<T>().Find(id);
+        }
         public List<T> GetByFilter(Func<T, bool> func)
         {
             return context.Set<T>().Where(func).ToList();
